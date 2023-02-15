@@ -40,6 +40,27 @@ app.get('/messages', async (req, res) => {
   }
 })
 
+// a route to handle fetching the "About Us" page content
+app.get('/about', async (req, res) => {
+  try {
+    const data = {
+      name: 'A',
+      first_paragraph: "I am passionate about art and technology and love experimenting with new mediums. Here are a few things you should know about me: I love learning; I know a bit about animation; in my free time, I enjoy painting and making music.", 
+      quote: "“A life is like a garden. Perfect moments can be had, but not preserved, except in memory. LLAP”",
+      imageUrl: "https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA17811.jpg"
+    };
+
+    res.json(data);
+  } catch (err) {
+    console.error(err);
+    res.status(400).json({
+      error: err,
+      status: 'failed to retrieve "About Us" page content from the database',
+    });
+  }
+});
+
+
 // a route to handle fetching a single message by its id
 app.get('/messages/:messageId', async (req, res) => {
   // load all messages from database

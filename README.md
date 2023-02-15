@@ -9,13 +9,13 @@ This is a so-called "monorepo" - a single repository containing all the componen
 To complete this exercise:
 
 1. run this app locally on your own machine (instructions for launching the app below)
-1. add a new page to the app called "About Us", where you have written a few paragraphs about yourself and included a photo of yourself (this does not require any modifications to the back-end code or database).
+1. add a new page to the app called "About Us", where you have written a few paragraphs about yourself and included a photo of yourself. The page content, including all text and the URL to the image must be retrieved as JSON data from a new route you create on the back-end.
 1. share a public link to your local instance of the app below (see `ngrok` instructions below for generating a public link)
 
 When you have completed the exercise, leave your local copy of the app running, enter the public link to it here, and push your code changes to GitHub:
 
 ```
-http://replace-with-your-ngrok-public-https-link
+ https://b4d8-2603-7000-3b00-b6ac-95d5-898d-5868-10d4.ngrok.io
 ```
 
 ## How to launch the app
